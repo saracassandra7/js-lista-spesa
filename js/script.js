@@ -9,8 +9,20 @@ const spesa = ['uova', 'latte', 'cipolle', 'biscotti', 'pasta', 'maionese'];
 const forList = document.querySelector('.for-list');
 const whileList = document.querySelector('.while-list')
 
+
+//ciclo for
 for (let i = 0; i < spesa.length; i++){
-  const prodotto = document.createElement('li');
-  prodotto.innerHTML = spesa[i];
-  forList.append(prodotto);
+  const prodottoFor = document.createElement('li');
+  prodottoFor.innerHTML = spesa[i];
+  forList.append(prodottoFor);
+}
+
+//ciclo while
+let c = 0;
+
+while(c<spesa.length){
+  const prodottoWhile = document.createElement('li');
+  prodottoWhile.innerHTML = spesa[c];
+  whileList.append(prodottoWhile);
+  c++;
 }
